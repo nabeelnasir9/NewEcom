@@ -1,0 +1,149 @@
+@import "../../../css-config/mixins.scss";
+
+
+.NewsLetterSection{
+    height: 400px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    background: #f9f9f9 url('../../../assets/newsletter-bg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    .NewsLetter_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: fit-content;
+        text-align: center;
+    }
+
+    .smallText{
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.568);
+        // opacity: 0.7;
+    }
+    .bigText{
+        margin-bottom: 30px;
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 0 30px;
+        @include md{
+            font-size: 28px;
+        }
+    }
+    .form{
+        display: flex;
+        gap: 5px;
+        margin-bottom: 10px;
+        input{
+            width: 200px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 0 12px;
+            font-size: 16px;
+            outline: 0;
+            @include md{
+                width: 300px;
+            }
+        }
+        .button{
+            outline: 0;
+            border: 0;
+            height: 40px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+            background-color: #8e2de2;
+            border-bottom: 3px solid #8e2de2 ;
+            border-radius: 5px;
+            @include md{
+                width: 120px;
+            }
+
+        }
+    }
+
+    .text{
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: black;
+    }
+    .socialIcons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .icon1{
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 20%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                background-color:#0061FF;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .icon2{
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 20%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                background-color:#1DA1F2;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .icon3{
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 20%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                background-color:#0A66C2;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .icon4{
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 20%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                background-color:#E4405F;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+
+
+
+
+
+}
